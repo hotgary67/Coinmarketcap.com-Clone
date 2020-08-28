@@ -1,0 +1,280 @@
+
+h7 {
+  font-size: 14px;
+
+}
+
+
+
+h8 {
+  font-size: 13px;
+
+}
+
+.fontsize9 {
+  font-size: 11px;
+}
+h10{
+  font-size: 13px;
+  font-weight: bold;
+    color: black
+}
+
+h11 {
+  font-size: 15px;
+  font-weight: bold;
+  color: black
+}
+
+h12 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black
+}
+
+col-1-TEST {
+  font-style: bold;
+  }
+
+.dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0; // remove the gap so it doesn't close
+
+}
+
+.column {
+}
+
+.left {
+  display: flex;
+  align: left;
+  width: 10%;
+  margin-right: 15px;
+
+}
+.middle {
+  width: 45%;
+  align: left;
+  margin-left: 10px;
+  line-height: normal;
+}
+
+.middle2 {
+  width: 50%
+  align: left;
+  margin-left: 10px;
+  line-height: normal;
+}
+
+.middle3 {
+  width: 50%
+  align: left;
+  margin-left: 10px;
+  line-height: normal;
+}
+
+.right {
+  width: 45%;
+  align: left;
+  line-height: normal;
+  background-color: whitesmoke;
+}
+
+
+.middle.biz {
+  margin-right: 25px;
+  width: 10%;
+  align: left;
+}
+
+.middle.biz1 {
+align: left;
+width:45%;
+margin-left: 35px;
+}
+
+.middle.biz2 {
+
+align: left;
+width: 45%;
+margin-left: 35px;
+
+}
+.lefts {
+  display: flex;
+  align: left;
+  width: 5%;
+  margin-right: 10px;
+
+}
+  .middles {
+    width: 45%;
+    align: left;
+    margin-right: 10px;
+
+  }
+
+  .d-flex.flex-column-3 {
+      align-content: flex-end;
+      justify-content:flex-end;
+  }
+
+.btn {
+      border-radius: 15px;
+      height: 50px;
+      weight: 90px;
+  }
+
+a.nav-link.dropdown-toggle {
+  padding: 0px;
+}
+
+.leftpadding {
+  padding: 10px;
+}
+
+.leftpaddingextra {
+  padding: 12px;
+}
+
+.leftpaddingextraplus {
+padding-left: 28px;
+padding-bottom: 15px;
+
+}
+
+
+.textsizerow {
+  font-size: 18px;
+  font-weight: bold;
+  color: black
+
+}
+.textsizerowsubtext {
+  font-size: 14px;
+  font-weight: bold;
+  color: black
+
+}
+
+.textsizerowsubtextselecteditem {
+  font-size: 15px;
+  font-weight: bold;
+  color: black
+
+}
+
+.textsizerowsubtextnocolorchange {
+  font-size: 15px;
+  font-weight: normal;
+
+
+}
+
+.login {
+  font-size: 14px;
+  weight: bold;
+}
+
+
+.d-flex.flex-column-9 {
+  font-size: 11px;
+
+}
+
+.nav-link {
+padding: 0px;
+}
+
+.nav-link.watchlist{
+padding: 0px;
+}
+
+.nav-item {
+margin: 9px;
+
+}
+
+.greystyle {
+  font size: 11px;
+  color: grey;
+  border: 1px solid;
+  border-color: lightgrey;
+  padding:10px
+
+}
+
+.linkblackfont {
+  color: black;
+
+}
+
+
+.tableheader {
+  color: black;
+   font-size: 15px;
+}
+
+.tablecontent {
+ font-size: 14px;
+ font-weight: normal;
+
+}
+
+.tablecontentbold {
+ font-size: 15px;
+ font-weight: bold;
+
+}
+
+
+.marginized {
+ margin-bottom: 10px;
+margin-left: 16px;
+
+}
+.main {
+
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+  padding-right: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.dropdown-toggle.top {
+text-align: left;
+line-height: 12px;
+
+
+}
+
+.collapse1 {
+
+padding: 13px;
+
+}
+
+.input-group.test {
+top: 13px;
+
+}
+
+.test{
+top: 13px;
+position: relative;
+
+}

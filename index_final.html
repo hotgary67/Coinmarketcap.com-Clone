@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="cmcstyle.css">
+    <title>Hello, Coinmarketcap!</title>
+  </head>
+  <body>
+
+
+    <div class="d-flex-12">
+        <div class="row p-3 mb-2 bg-primary text-white alert alert-warning alert-dismissible fade show justify-content-center" role="alert">
+          <h8>Earn crypto as you learn about crypto. Introducing CoinMarketCap Earn, where you get token rewards for participating</h8>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+     </div>
+
+<div class="container">
+ <div class="d-flex justify-content-between leftpadding-9">
+
+         <div class="d-flex flex-column-9"> Cryptocurrencies:&nbsp; <span class="d-flex.flex-column-9" id="numberOfCoins"></span>
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dot" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                </svg>
+              Markets: &nbsp;<span class="d-flex.flex-column-9" id="numberofMarkets"></span>
+               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dot" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                </svg>
+              Market Cap: &nbsp;<span class="d-flex.flex-column-9" id="totalMarketCap"></span>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dot" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                </svg>
+
+          24h Vol:&nbsp;<span class="d-flex.flex-column-9" id="total24HourVolume"></span>
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dot" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                </svg>
+
+          BTC Dominance:&nbsp;<span class="d-flex.flex-column-9" id="bitcoinDominance"</span>  </div>
+
+        <div class="d-flex justify-content-end flex-column-3">
+
+          <!-- Hier probeer ik de content aan het einde uit te lijnen, lukt niet-->
+          <span class ="fontsize9"><a href="url">Advertise</a></span>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;
+
+              <a class="dropdown-toggle top" data-toggle="dropdown-toggle" href="#" aria-haspopup="true" aria-expanded="false" ><span class ="fontsize9">EN</span>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Spot Exchanges</a>
+                    <a class="dropdown-item" href="#">Derivatives Exchanges</a>
+                  </div>
+                </a>  &nbsp;&nbsp;&nbsp;
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-moon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"/>
+                </svg>
+
+        </div>
+
+
+
+  </div>
+</div>
+
+
+
+<div class="container">
+ <div class="d-flex justify-content-between">
+
+      <div class="d-flex flex-column-8">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#"><img src="mclone.jpg" alt=""><span class="textsizerow">CoinMarketCap</span></a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="textsizerowsubtext">Cryptocurrencies</span></a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="d-flex flex-row">
+                          <div class="column left">
+                             <a class="dropdown-item" href="#"><img src="mlogo3.jpg" alt=""></a>
+                          </div>
+
+                          <div class="column middle">
+                              <a class="dropdown-item" href="#"><span class="textsizerowsubtext">Cryptocurrencies</span></h10><br><span class ="fontsize9">Combined coins and tokes ranking</span>
+                               </a>
+
+                                      <div class="column middle2">
+                                        <a class="dropdown-item">
+                                          <h10>Daily Volume&nbsp;</h10>
+                                            <br>
+                                          <h10>Derivatives&nbsp;</h10>
+                                            <br>
+                                          <h10>Defi&nbsp;</h10></a>
+                                     </div>
+
+
+                                     <div class="column middle3">
+                                            <a class="dropdown-item">
+                                            <h10>Monthly Volume</h10>
+                                              <br>
+                                            <h10>Mineable Coins</h10></a>
+                                    </div>
+
+                        </div>
+
+                        <div class="column right">
+                         <a class="dropdown-item" href="#">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-graph-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h1v16H0V0zm1 15h15v1H1v-1z"/><path fill-rule="evenodd" d="M14.39 4.312L10.041 9.75 7 6.707l-3.646 3.647-.708-.708L7 5.293 9.959 8.25l3.65-4.563.781.624z"/>
+                                <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4h-3.5a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                            <h11>Gainers & losers</h11><br><span class ="fontsize9">See movers at a quick glance</span></a>
+                               <br>
+
+                         <a class="dropdown-item" href="#">
+                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pie-chart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path fill-rule="evenodd" d="M7.5 7.793V1h1v6.5H15v1H8.207l-4.853 4.854-.708-.708L7.5 7.793z"/>
+                                  </svg>
+                                  <h11>Global Charts</h11><br><span class ="fontsize9">Market Cap & Dominance Charts</span></a>
+                                    <br>
+                        <a class="dropdown-item" href="#">
+                          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-card-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                            <path fill-rule="evenodd" d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                              </svg>
+                              <h11>Recently Added</h11><br><span class ="fontsize9">Latest coins listed on CMC</span></a>
+                  </div>
+              </div>
+
+                       <div class="d-flex flex-row">
+
+                            <div class="column left">
+                               <a class="dropdown-item" href="#"><img src="coins.jpg" alt=""></a>
+                            </div>
+
+                            <div class="column middle">
+                               <a class="dropdown-item" href="#"><h10>Coins</h10><br><span class ="fontsize9">Coin ranking</span></a>
+                            </div>
+
+                            <div class="column right">
+                              </div>
+                      </div>
+
+
+                  <div class="d-flex flex-row">
+                        <div class="column left">
+                           <a class="dropdown-item" href="#"><img src="tokens.jpg" alt=""></a>
+                          </div>
+
+                        <div class="column middle">
+                          <a class="dropdown-item" href="#"><h10>Tokens</h10><br><span class ="fontsize9">Token ranking</span></a>
+                        </div>
+
+                        <div class="column right">
+                        </div>
+                </div>
+
+
+        <li class="nav-item dropdown ">
+                <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="textsizerowsubtext">Exchanges</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="d-flex flex-row">
+
+                        <div class="column left">
+                           <a class="dropdown-item" href="#"><img src="coins.jpg" alt=""></a>
+                          </div>
+
+                        <div class="column middle">
+                          <a class="dropdown-item" href="#"><h10>Spot</h10><br><span class ="fontsize9">Top Cryptocurrency Exchanges Ranking</span></a>
+                        </div>
+
+
+              </div>
+                <br>
+
+            <div class="d-flex flex-row">
+
+            <div class="column left">
+            <a class="dropdown-item" href="#"><img src="tokens.jpg" alt=""></a>
+            </div>
+
+                  <div class="column middle">
+                  <a class="dropdown-item" href="#"><h11>Derivaties</h11><br><span class ="fontsize9">Futures, Contract or Options Exchanges</span></a>
+                  </div>
+            </div>
+      </li>
+
+              <li class="nav-item dropdown">
+                      <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="textsizerowsubtext">Headlines</span>
+                      </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        <div class="d-flex flex-row">
+
+                              <div class="column left">
+                                 <a class="dropdown-item" href="#"><img src="coins.jpg" alt=""></a>
+                                </div>
+                              <div class="column middle">
+                                <a class="dropdown-item" href="#"><h11>Feed</h11><br><span class ="fontsize9">Get you daily dose of crypto today</span></a>
+                                </div>
+
+                      </div>
+
+                            <br>
+
+
+                  <div class="d-flex flex-row">
+
+                            <div class="column left">
+                            <a class="dropdown-item" href="#"><img src="tokens.jpg" alt=""></a>
+                            </div>
+
+                            <div class="column middle">
+                             <a class="dropdown-item" href="#"><h10>News</h10><br><span class ="fontsize9">All the latest happenings in cryptp space</span></a>
+                            </div>
+
+
+                    </div>
+
+                          <br>
+
+                  <div class="d-flex flex-row">
+
+                      <div class="column left">
+                      <a class="dropdown-item" href="#"><img src="tokens.jpg" alt=""></a>
+                      </div>
+                      <div class="column middle">
+                       <a class="dropdown-item" href="#"><h10>Signals</h10><br><span class ="fontsize9">Development & updates from crypto projects</span></a>
+
+                      </div>
+
+                    </div>
+
+                       <br>
+
+
+                       <div class="d-flex flex-row">
+
+                             <div class="column left">
+                                <a class="dropdown-item" href="#"><img src="coins.jpg" alt=""></a>
+                               </div>
+                               <div class="column middle">
+                                       <a class="dropdown-item" href="#"><h10>Events</h10><br><span class ="fontsize9">Interactive sessions in real-time</span></a>
+
+                                   </div>
+
+
+  </div>
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="textsizerowsubtext">Products</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <div class="d-flex flex-row">
+
+                                        <div class="column left">
+                                        <a class="dropdown-item" href="#"><img src="tokens.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="column middle">
+                                         <a class="dropdown-item" href="#"><h11>Product</h11><br><span class ="fontsize9">Test version</span></a>
+                                        </div>
+
+
+                                </div>
+                          </li>
+
+                          <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="textsizerowsubtext">Tools</span>
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <div class="d-flex flex-row">
+
+                                              <div class="column left">
+                                              <a class="dropdown-item" href="#"><img src="tokens.jpg" alt=""></a>
+                                              </div>
+
+                                              <div class="column middle">
+                                               <a class="dropdown-item" href="#"><h11>Tools</h11><br><span class ="fontsize9">Test version</span></a>
+                                              </div>
+
+                                      </div>
+                                  </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="textsizerowsubtext">Learn</span>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <div class="d-flex flex-row">
+
+                                                    <div class="column left">
+                                                    <a class="dropdown-item" href="#"><img src="tokens.jpg" alt=""></a>
+                                                    </div>
+
+                                                    <div class="column middle">
+                                                     <a class="dropdown-item" href="#"><h11>Learn</h11><br><span class ="fontsize9">Test version
+                                                      </span></a>
+                                                    </div>
+
+
+                                          </div>
+                                        </div>
+                                </li>
+                                <div class="d-flex justify-content-between-4">
+
+                                      <div class="input-group test">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                            <button class="btn" type="button">
+                                              <i class="fa fa-search"></i>
+                                            </button>
+
+                                      </div>
+
+                                  <div class="d-flex test">
+
+                                          <svg width="3em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+                                                </svg>
+
+                                                <span class ="login"> <a href="url">Log In</a></span>
+
+                                                   <a href="#" class="btn btn-primary btn-sm active" role="button" aria-pressed="true"><span class ="login"> Sign Up</span></a>
+
+                                </div>
+                              </div>
+                                              <!-- Ik probeer de button hier te rounden, dit lukt niet -->
+
+                      </div>
+                  </ul>
+
+      </div>
+
+  </div>
+
+  </div>
+        </div>
+      </nav>
+</div></div>
+
+
+  <div class="container">
+    <div class="d-flex flex-row justify-content-center leftpaddig">
+      <div class="d-flex flex-column-12"><center><br><br><h4>Top 100 Cryptocurrencies by Market Capitalization</h4><br></center>
+      </div>
+
+   </div>
+
+
+  </div>
+
+ <div class="container">
+    <div class="d-flex justify-content-between">
+
+                <div class="d-flex flex-column-7 justify-content-between marginized">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="textsizerowsubtextselecteditem">Cryptocurrencies</span>
+                                 </a>
+
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item">All Cryptocurrencies (Lighter color maken)</a>
+                                  <a class="dropdown-item" href="#">Top 100</a>
+                                  <a class="dropdown-item" href="#">Full List</a>
+                                  <a class="dropdown-item" href="#">Derivatives</a>
+
+                                  <div class="dropdown-divider">
+                                  </div>
+
+                                  <a class="dropdown-item">Coins Only</a>
+                                  <a class="dropdown-item" href="#">Top 100</a>
+                                  <a class="dropdown-item" href="#">Full List</a>
+                                  <a class="dropdown-item" href="#">Market Cap by Circulating Supply</a>
+                                  <a class="dropdown-item" href="#">Market Cap by Total Supply</a>
+                                  <a class="dropdown-item" href="#">Minabkle Coins</a>
+
+                                  <div class="dropdown-divider">
+                                  </div>
+
+                                  <a class="dropdown-item">Tokens Only</a>
+                                  <a class="dropdown-item" href="#">Top 100</a>
+                                  <a class="dropdown-item" href="#">Market Cap by Circulating Supply</a>
+                                  <a class="dropdown-item" href="#">Market Cap by Total Supply</a>
+                            </div>
+                      </li>
+
+                      <li class="nav-item ">
+                          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="textsizerowsubtextnocolorchange">Exchanges</span>
+                            </a>
+
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Spot Exchanges</a>
+                                <a class="dropdown-item" href="#">Derivatives Exchanges</a>
+                              </div>
+                    </li>
+
+                    <li class="nav-item watchlist">
+                      <a class="nav-link watchlist" href="watchlist.html"><span class="textsizerowsubtextnocolorchange">Watchlist</span></a>
+                    </li>
+
+                </ul>
+
+              </div>
+
+
+                 <div class="d-flex flex-column-3">
+
+                       <button type="button" class="btn btn" data-target="btn-group">
+                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-funnel" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+                         </svg>
+                      <a data-toggle="collapse" href="#collapse1"><span class="linkblackfont">Filters</span></a>
+                       </button>
+
+                      <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="linkblackfont">  USD</span>
+                      </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">BTC</a>
+                          <a class="dropdown-item" href="#">ETH</a>
+                          <a class="dropdown-item" href="#">XRP</a>
+                          <a class="dropdown-item" href="#">BCH</a>
+                          <a class="dropdown-item" href="#">LTC</a>
+                      </div>
+
+                          <button type="button" class="btn btn"><a href="#">Next 100 →</a></button>
+                          <button type="button" class="btn btn"><a href="#">View All</a></button>
+
+            </div>
+
+</div>
+
+</div>
+
+        <div class="container">
+           <div id ="collapse1" class="row btn-group collapse justify-content-between leftpaddingextraplus" role="group" aria-label="Button group with nested dropdown">
+
+                        <input id="myInput" type="text" placeholder="Filter results....." style="width:300px">
+                        <br>
+                    </div>
+
+
+
+
+          </div>
+
+
+  <!-- /https://api.jquery.com/toggle/ check deze voor de collapse -->
+
+
+                <!--        <button id="btnGroupDrop1" type="button" class="btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-pressed="false" autocomplete="off">
+                            <span class ="greystyle">Market Cap</span>
+                          </button>
+
+                          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" >
+                              <a class="dropdown-item">
+                                      <strong>Market Cap Range</strong>
+
+                                      <div class="input-group mb-3">
+                                        <input type="text" class="form-control" aria-label="Amount lowest">
+                                        <strong>To</strong>
+                                        <input type="text" class="form-control" aria-label="Amount highest">
+                                      </div>
+
+                                    <div class="input-group mb-3">
+                                      <div class="input-group-prepend" id="button-addon3">
+                                          <button class="btn btn-outline-secondary" type="button">Clear Filter</button>
+                                          <button class="btn btn-outline-secondary" type="button">Cancel</button>
+                                            <button class="btn btn-outline-secondary" type="button">Apply</button>
+                                     </div>
+                                   </div>
+                            </a>
+                          </div>
+
+                        <button id="btnGroupDrop2" type="button" class="btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-pressed="false" autocomplete="off">
+                            <span class ="greystyle">Price</span>
+                         </button>
+
+                          <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+                             <a class="dropdown-item" href="#">LALALALA</a>
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                          </div>
+
+                      <button id="btnGroupDrop3" type="button" class="btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-pressed="false" autocomplete="off">
+                        <span class ="greystyle">Volume (24h)</span>
+                       </button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
+                              <a class="dropdown-item" href="#">Dropdown link</a>
+                              <a class="dropdown-item" href="#">Dropdown link</a>
+                            </div>
+
+                      <button id="btnGroupDrop4" type="button" class="btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class ="greystyle">Circulating Supply</span>
+                       </button>
+
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop4">
+                               <a class="dropdown-item" href="#">Dropdown link</a>
+                                <a class="dropdown-item" href="#">Dropdown link</a>
+                              </div>
+
+                      <button id="btnGroupDrop5" type="button" class="btn btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class ="greystyle">Change (24h)</span>
+                       </button>
+                             <div class="dropdown-menu" aria-labelledby="btnGroupDrop5">
+                                 <a class="dropdown-item" href="#">Dropdown link</a>
+                                 <a class="dropdown-item" href="#">Dropdown link</a>
+                            </div>
+                            <button id="btnGroupDrop5" type="button" class="btn" aria-haspopup="true" aria-expanded="false">
+                              <span class ="greystyle">Clear Filters</span>
+                            </button>
+                      -->
+
+<!-- https://www.w3schools.com/howto/howto_js_sort_table.asp  GOEDE SORT
+<table id="myTable2">
+<tr>
+When a header is clicked, run the sortTable function, with a parameter,
+0 for sorting by names, 1 for sorting by country:
+
+<th onclick="sortTable(0)">Name</th>
+<th onclick="sortTable(1)">Country</th>
+</tr> -->
+<div class="container">
+      <div class="row leftpaddig justify-content-between">
+            <table id="myTable" class="table table sortable">
+
+                    <thead>
+                      <tr>
+                      <th><a href="javascript:sortTable(0,'N');"><span class ="tableheader">Rank</span></a></th>
+                        <th><span class ="tableheader">Name</span></a></th>
+                          <th><span class ="tableheader">Market Cap</span></a></th>
+                      <th><span class ="tableheader">Price</span></a></th>
+                      <th><span class ="tableheader">Volume (24)</span></a></th>
+                      <th><span class ="tableheader">Circulating Supply</span></a></th>
+                        <th><span class ="tableheader">Change (24h)</span></a></th>
+
+                      <!--  <th scope="col">Price Graph (7d)</th> -->
+                      </tr>
+                    </thead>
+                    <tbody>
+
+                        <tbody id="myTable">
+
+
+                        </tbody>
+                    </tbody>
+            </table>
+
+                 <!-- https://stackoverflow.com/questions/10789936/sticking-div-to-top-after-scrolling-past-it -->
+
+
+   </div>
+
+</div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/a555e0d0e4.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="cmc_final.js"></script>
+  </body>
+</html>
